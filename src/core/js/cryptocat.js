@@ -479,7 +479,6 @@ function desktopNotification(image, title, body, timeout) {
 		var notice
 		// Firefox
 		if ((navigator.userAgent.match('Firefox\/(.*)')[1] | 0) >= 22) {
-			var Notification
 			notice = new Notification(title, { tag: 'Cryptocat', body: body, icon: image })
 		}
 		// Chrome, Safari
